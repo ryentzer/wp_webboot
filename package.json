@@ -1,7 +1,7 @@
 {
   "name": "wp_webboot",
   "version": "0.7.1",
-  "description": "WordPress Webpack Bootstrap base theme",
+  "description": "WordPress Webpack Bootstrap skeleton theme",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --watch",
