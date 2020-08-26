@@ -1,0 +1,31 @@
+{
+  "name": "wp_webboot",
+  "version": "0.7.1",
+  "description": "WordPress Webpack Bootstrap base theme",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack --mode=production"
+  },
+  "keywords": ["wordpress", "webpack", "bootstrap", "theme"],
+  "author": "Rick Yentzer",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.12",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^4.2.2",
+    "eslint": "^7.7.0",
+    "eslint-loader": "^4.0.2",
+    "mini-css-extract-plugin": "^0.10.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}
