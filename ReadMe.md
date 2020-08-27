@@ -7,8 +7,20 @@ A simple WordPress Webpack Bootstrap skeleton theme
 + WordPress skeleton theme
 + Webpack 4
 + Bootstrap 4
++ [wp-bootstrap-navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
 
-This is a work in progress, but I hope you find it helpful.
+## Todos
+
+This is a work in progress.
+
++ add style linting
++ php lint with phpcs and [WordPress coding standards](https://github.com/WordPress/WordPress-Coding-Standards)
++ add [WP customizer options](https://developer.wordpress.org/themes/customize-api/customizer-objects/)
++ build more template pages
++ proper localization
++ check data sanitization
+
+
 
 ### Shout out
 
