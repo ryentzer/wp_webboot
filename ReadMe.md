@@ -15,14 +15,18 @@ This is a work in progress.
 
 + add style linting
 + php lint with phpcs and [WordPress coding standards](https://github.com/WordPress/WordPress-Coding-Standards)
+
+    + [article](https://prtksxna.com/wordpress-phpcs-theme/)
 + add [WP customizer options](https://developer.wordpress.org/themes/customize-api/customizer-objects/)
 + build more template pages
+
+    + Might use [this blog template](https://getbootstrap.com/docs/4.5/examples/blog/)
 + proper localization
 + check data sanitization
 
 
 
-### Shout out
+### Shout outs
 
 Special thanks to Carrie Forde's article: https://carrieforde.com/webpack-wordpress/.
-Her article, and the webpack docs were the catalyst for this project.
+Her article, and the excellent webpack docs were the catalyst for this project.
