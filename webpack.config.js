@@ -1,6 +1,6 @@
 const path = require('path'),
     miniCssPlugin = require('mini-css-extract-plugin'),
-    bs = require('browser-sync-webpack-plugin');
+    browserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
     context: __dirname,
@@ -20,7 +20,30 @@ module.exports = {
             },
             {
                 test: /\.s?css/,
-                use: [miniCssPlugin.loader, 'css-loader', 'sass-loader']
+                use: [
+                    {
+                        loader: miniCssPlugin.loader
+                    }, {
+                        loader: 'css-loader'
+                    },
+                    {
+                        loader: 'postcss-loader', // Run postcss actions
+                        options: {
+                            plugins: function () { // postcss plugins, can be exported to postcss.config.js
+                                return [
+                                    require('autoprefixer')
+                                ];
+                            }
+                        }
+                    },
+                    {
+                        loader: 'sass-loader'
+                    }
+                ]
+            },
+            {
+                test: /\.(jpg|png|gif)$/,
+                loader: 'file-loader',
             }
         ]
     },
@@ -28,9 +51,9 @@ module.exports = {
         new miniCssPlugin({
             filename: '[name].css'
         }),
-        new bs({
+        new browserSyncPlugin({
             files: '**/*.php',
-            proxy: 'localhost/wordpress_dev',
+            proxy: 'localhost/wordpress_dev', //change to suit your local dev environment needs
         })
     ]
 }

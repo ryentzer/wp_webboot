@@ -15,7 +15,7 @@ if ( ! function_exists( 'wp_webboot_setup' ) ) :
 			wp_enqueue_script( 'bundle',
 			                   get_template_directory_uri()
 			                   . '/bundled/bundle.js',
-			                   'jquery',
+			                   array('jquery'),
 			                   '0.7.1',
 			                   true );
 			wp_enqueue_style( 'main',
@@ -29,7 +29,7 @@ if ( ! function_exists( 'wp_webboot_setup' ) ) :
 			wp_enqueue_script( 'bootstrap_js',
 			                   get_template_directory_uri()
 			                   . '/node_modules/bootstrap/dist/js/bootstrap.bundle.js',
-			                   'jquery',
+			                   array('jquery'),
 			                   '0.7.1',
 			                   true );
 		}
