@@ -1,11 +1,31 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "wp";
 
+// bootstrap adjustments
 .container div {
-  max-width: 100%;
 
   img {
     max-width: 100%;
     height: auto;
+  }
+}
+
+// Primary content
+//
+.primary-content {
+
+  // Post meta
+  .post-meta {
+    clear: both;
+  }
+}
+
+
+
+// Secondary content
+//
+.secondary-content {
+  ul {
+    @include list_unstyled;
   }
 }

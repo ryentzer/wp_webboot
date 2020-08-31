@@ -43,7 +43,7 @@ if ( ! function_exists( 'wp_webboot_setup' ) ) :
 			                  'name'          => __( 'Primary Sidebar',
 			                                         'wp_webboot' ),
 			                  'id'            => 'primary-sb',
-			                  'before_widget' => '<aside id="%1$s" class="%2$s">',
+			                  'before_widget' => '<aside id="%1$s" class="%2$s my-5">',
 			                  'after_widget'  => '</aside>',
 			                  'before_title'  => '<h3 class="widget-title">',
 			                  'after_title'   => '</h3>'

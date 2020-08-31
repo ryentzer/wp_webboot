@@ -8,3 +8,9 @@
 .wp-block-button__link.is-style-squared {
   border-radius: 0;
 }
+
+.alignright::after {
+  content: '';
+  display: block;
+  clear: bottom;
+}
