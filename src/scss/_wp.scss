@@ -1,0 +1,10 @@
+/*
+ * WordPress specific styling
+*/
+
+// bug in css core as of version 5.5
+// see https://core.trac.wordpress.org/ticket/51195#ticket
+.wp-block-button.is-style-squared .wp-block-button__link,
+.wp-block-button__link.is-style-squared {
+  border-radius: 0;
+}

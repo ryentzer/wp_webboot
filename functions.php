@@ -15,7 +15,7 @@ if ( ! function_exists( 'wp_webboot_setup' ) ) :
 			wp_enqueue_script( 'bundle',
 			                   get_template_directory_uri()
 			                   . '/bundled/bundle.js',
-			                   array('jquery'),
+			                   array( 'jquery' ),
 			                   '0.7.1',
 			                   true );
 			wp_enqueue_style( 'main',
@@ -27,9 +27,9 @@ if ( ! function_exists( 'wp_webboot_setup' ) ) :
 
 			// Enqueue bootstrap
 			wp_enqueue_script( 'bootstrap_js',
-			                   get_template_directory_uri()
+			                   get_template_directory()
 			                   . '/node_modules/bootstrap/dist/js/bootstrap.bundle.js',
-			                   array('jquery'),
+			                   array( 'jquery' ),
 			                   '0.7.1',
 			                   true );
 		}
@@ -54,8 +54,10 @@ if ( ! function_exists( 'wp_webboot_setup' ) ) :
 	add_action( 'widgets_init', 'wp_webboot_widgets_init' );
 
 	function register_navwalker() {
-		require_once get_template_directory() . '/classes/class-wp-bootstrap-navwalker.php';
+		require_once get_template_directory()
+		             . '/classes/class-wp-bootstrap-navwalker.php';
 	}
-	add_action('after_setup_theme', 'register_navwalker');
+
+	add_action( 'after_setup_theme', 'register_navwalker' );
 
 endif;
